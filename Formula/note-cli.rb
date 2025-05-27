@@ -5,13 +5,13 @@
 class NoteCli < Formula
   desc "Note CLI"
   homepage "https://blues.com"
-  version "1.7.5"
+  version "1.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blues/note-cli/releases/download/v1.7.5/note-cli_1.7.5_darwin_amd64.tar.gz"
-      sha256 "55d70465c082f407e2fc3b24e9de126051ffb3d12890e9ed5017e98552b9968a"
+      url "https://github.com/blues/note-cli/releases/download/v1.8.1/note-cli_1.8.1_darwin_amd64.tar.gz"
+      sha256 "319f4fdb0aaea827cb908c5622f0b90bd49e5c2d49562832804c0f301616398e"
 
       def install
         bin.install "notecard"
@@ -19,8 +19,8 @@ class NoteCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blues/note-cli/releases/download/v1.7.5/note-cli_1.7.5_darwin_arm64.tar.gz"
-      sha256 "2dbdff3451f99b1d7c8863a973e908d280bbb735769275272e12a01a2a90db2f"
+      url "https://github.com/blues/note-cli/releases/download/v1.8.1/note-cli_1.8.1_darwin_arm64.tar.gz"
+      sha256 "1f6b6678a5839321a9b9c3b50c427794a505ea53559238b339101a88ac1677b0"
 
       def install
         bin.install "notecard"
@@ -31,24 +31,24 @@ class NoteCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/blues/note-cli/releases/download/v1.7.5/note-cli_1.7.5_linux_amd64.tar.gz"
-      sha256 "02b527c995a1286a70600e3f4a370d0a1744744042e01c175420dc222898d18a"
+      url "https://github.com/blues/note-cli/releases/download/v1.8.1/note-cli_1.8.1_linux_amd64.tar.gz"
+      sha256 "fdc68228d63df8e5fddbf5810a69b86b49e7d0dfd310cfb98ef65b27776865d2"
       def install
         bin.install "notecard"
         bin.install "notehub"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/blues/note-cli/releases/download/v1.7.5/note-cli_1.7.5_linux_armv6.tar.gz"
-      sha256 "908c38f45a6ff8414f1afd6930c810a5848a2bde15e54c80b7dbe82e401d4dad"
+      url "https://github.com/blues/note-cli/releases/download/v1.8.1/note-cli_1.8.1_linux_armv6.tar.gz"
+      sha256 "922ccee6b8a8ed32f370f83da64ca515a51952f09144696761eafb2bc5b2e2d1"
       def install
         bin.install "notecard"
         bin.install "notehub"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/blues/note-cli/releases/download/v1.7.5/note-cli_1.7.5_linux_arm64.tar.gz"
-      sha256 "c4202f29663952001e8fdaa2421bd9e8e0ef2cee2b642caf55b6ec002acb7d22"
+      url "https://github.com/blues/note-cli/releases/download/v1.8.1/note-cli_1.8.1_linux_arm64.tar.gz"
+      sha256 "2824cfe40d5f554774783f5e1009690812794d49b91c26e747e8e82aa64a2ee5"
       def install
         bin.install "notecard"
         bin.install "notehub"
