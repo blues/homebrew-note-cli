@@ -3,7 +3,7 @@ cask "note-cli" do
   name "note-cli"
   desc "Note CLI"
   homepage "https://blues.com"
-  version "1.9.7"
+  version "1.9.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "note-cli" do
   on_macos do
     on_intel do
       url "https://github.com/blues/note-cli/releases/download/v#{version}/note-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "55d4995c24967dbf9a077969857b6976753634e3a82acc5bd5b1e7815dd6874e"
+      sha256 "5b9201a64dc92699b65e0cee03ada56b442c59823373740b488731b578594a42"
     end
     on_arm do
       url "https://github.com/blues/note-cli/releases/download/v#{version}/note-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "58984583c96c9af1dbdce0bdef205d3c7ac69070aa90aae52374b6995e7ee579"
+      sha256 "db416e60f68fc9db9585041a560f5bad3e70d8bc026e73c88e40b7a9efa96b5d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/blues/note-cli/releases/download/v#{version}/note-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "5823a129a93474b8f043fe3d5f725a5b7d6ca052ad8102c8feb56faabed422fd"
+      sha256 "fe1546469a4602c26cc88d6dd7dcbce6f74ff5b24a771ec583584e1b2e533aab"
     end
     on_arm do
       url "https://github.com/blues/note-cli/releases/download/v#{version}/note-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "7b561b7a7a152a1a66474dea247c1a7bbad5a565521ed1ed0973833215170b5a"
+      sha256 "a3ee72447554a20c64ffd5f04669dbc35769c628b140d5f67a0aa3155c0053d3"
     end
   end
 
